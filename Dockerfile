@@ -7,5 +7,5 @@ ADD www /www
 ADD nginx.conf /etc/nginx/
 ADD php-fpm.conf /etc/php5/php-fpm.conf
 
-EXPOSE 80
+EXPOSE 8080
 CMD php-fpm -d variables_order="EGPCS" && exec nginx -g "daemon off;"
